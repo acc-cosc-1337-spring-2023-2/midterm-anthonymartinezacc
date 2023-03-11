@@ -1,1 +1,3 @@
-bool test_config();
+void incrementValue(int num);
+
+void incrementReference(int& num);
