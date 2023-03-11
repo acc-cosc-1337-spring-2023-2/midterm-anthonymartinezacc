@@ -6,7 +6,6 @@ TEST_CASE("Verify Test Configuration", "verification") {
 	REQUIRE(true == true);
 }
 
-TEST_CASE("test")
-{
-	REQUIRE(test_config() == true);
+TEST_CASE("Valid RNA string") {
+    REQUIRE(transcribe_dna_to_rna("GATGGAACTTGACTACGTAAATT") == "GAUGGAACUUGACUACGUAAAUU");
 }

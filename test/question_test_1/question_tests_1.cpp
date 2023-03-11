@@ -6,7 +6,14 @@ TEST_CASE("Verify Test Configuration", "verification") {
 	REQUIRE(true == true);
 }
 
-TEST_CASE("test")
-{
-	REQUIRE(test_config() == true);
+TEST_CASE("gcd case 1") {
+    REQUIRE(find_ged(15, 25) == 5);
+}
+
+TEST_CASE("gcd case 2") {
+    REQUIRE(find_ged(16, 32) == 16);
+}
+
+TEST_CASE("gcd case 3") {
+    REQUIRE(find_ged(159, 309) == -1); //invalid because 309 > 200
 }
