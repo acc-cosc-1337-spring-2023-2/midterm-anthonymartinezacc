@@ -1,6 +1,9 @@
-#include "question2.h"
+// value parameter version
+void incrementValue(int num) {
+    num++;
+}
 
-bool test_config()
-{
-    return true;
+// reference parameter version
+void incrementReference(int& num) {
+    num++;
 }
